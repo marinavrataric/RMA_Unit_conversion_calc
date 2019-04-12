@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="mvrataric.ferit.hr.unit_conversion_calculator.Result"
+    android:padding="100sp"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:id="@+id/tvResultFrom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="15sp"
+        android:text="Test Text"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textColor="#E6F4F1"/>
+
+    <TextView
+        android:id="@+id/tvResultMeasureFrom"
+        android:layout_width="match_parent"
+        android:layout_height="80sp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/tvResultFrom"
+        android:padding="15sp"
+        android:text="Test Text"
+        android:textSize="23sp"
+        android:textStyle="italic"/>
+
+    <TextView
+        android:id="@+id/tvResultTo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/tvResultMeasureFrom"
+        android:padding="15sp"
+        android:text="Test Text"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textColor="#E6F4F1"/>
+
+    <TextView
+        android:id="@+id/tvResultMeasureTo"
+        android:layout_width="match_parent"
+        android:layout_height="80sp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/tvResultTo"
+        android:padding="15sp"
+        android:text="Test Text"
+        android:textSize="23sp"
+        android:textStyle="italic"/>
+
+</android.support.constraint.ConstraintLayout>

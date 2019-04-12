@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="mvrataric.ferit.hr.unit_conversion_calculator.Conversion"
+    android:padding="15sp"
+    android:background="#95B0B0">
+
+    <TextView
+        android:id="@+id/tvConversionTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        android:text="Test Text"
+        android:textColor="#4A6666"/>
+
+    <Spinner
+        android:id="@+id/spinnerConversionFrom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tvConversionTitle"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_editor_absoluteX="15dp"
+        android:padding="30sp">
+    </Spinner>
+
+    <EditText
+        android:id="@+id/etEnterItemValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerConversionFrom"
+        android:hint="Enter value..."
+        android:textStyle="bold"
+        android:inputType="number"
+        android:textSize="25sp"
+        android:textColor="#4A6666"/>
+
+    <Spinner
+        android:id="@+id/spinnerConversionTo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/etEnterItemValue"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_editor_absoluteX="15dp"
+        android:padding="30sp">
+    </Spinner>
+
+    <Button
+        android:id="@+id/btnConverAction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Convert"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#4A6666"/>
+
+</android.support.constraint.ConstraintLayout>
